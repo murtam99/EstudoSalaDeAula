@@ -1,9 +1,15 @@
 		* {
 				margin: 0;
-				font-family: Roboto, sans-serif;
+				padding: 0;
+				box-sizing: border-box
             }
-            
+			
+			:root{
+				--cor-de-fundo: rgb(231, 143, 7);
+				--cor-secundaria: rgb(255, 255, 255); 
+			}
             body{
+				font-family: Roboto, sans-serif;
                 width: 760px;
                 margin: auto;
                 text-align: justify;
@@ -11,12 +17,14 @@
             }
             main {background-color: rgb(255, 255, 255);
                 /* margin:20px; */
-                padding: 20px;
+				padding: 20px;
+				float: left;
             }
-		h1 {
+		main h1 {
 		font-family: Roboto, sans-serif;
 		font-size: 60px;
 		margin:0; 
+		text-transform: uppercase;
 		/* Isto é um comentário em CSS*/
 		/* color #0000FFF; hexadecimal */
 		color: rgb(0, 0 , 255);
@@ -24,5 +32,33 @@
 
 		h2 {
 			font-size: 40px
+		}
+
+		li{
+			background-color: blue;		
+			list-style-type: none;
+			display: inline;
+			padding: 10px;
+		}
+
+		li a {
+			display: initial-block;
+			color: rgb(233, 221, 221);
+			padding: 10px;
+			line-height: 20px;
+		}
+
+		footer{
+			height: 50px;
+			line-height: 50px;
+			background-color: black;
+			color: blanchedalmond;
+			clear: both /*left right both*/
+		}
+
+		aside{
+			float: right;
+			width: 15%;
+			background-color: var(--cor-secundaria)
 		}
 	
