@@ -6,14 +6,17 @@
 
 :root{
     --cor-de-fundo: rgb(231, 134, 7);
-    --cor-secundaria: rgb(255, 255, 255);
+	--cor-secundaria: rgb(255, 255, 255);
+	--COR-azul: rgb(0,0,255); 
+	--cor-preto: rgb (0,0,0);
+	--cor-laranja-claro: rgb(255,235,205);
+
 }
 
 body{
     font-family: Roboto, sans-serif;
-    width: 760px;
+    width: 1024px;
     margin: auto;
-    text-align: justify;
     background-color: var(--cor-de-fundo);
 }
 
@@ -21,10 +24,38 @@ main{
     background-color: var(--cor-secundaria);
     /* margin: 20px; */
     padding: 20px;
-    float: left;
-    width: 85%;
+    position: relative;
 }
 
+blockquote{
+	padding: 10px;
+	float: left;
+	width: 30%;
+	background-color: rgb(206, 202, 202);
+	/*border-bottom-width: 10px;
+	border-style: solid; 
+	border-color: black;*/
+	display: block;
+	border: 10px solid #7a7a7a; 
+}
+
+cite{
+	display: block;
+	margin: 15px 20px 3px 0; /* CIMA DIREITA BAIXO ESQUERDA */
+	/* margin: 15px; Todos os lados iguais */
+	/* margin: 15px 20px; Primeiro valor serve para o TOPO e BOTTOM o segundo valor é para ESQUERDA e DIREITA*/
+	line-height: 20px;
+	text-align: right;
+}
+
+.limpaFloat{
+	clear: both;
+}
+
+.divisaoColuna{
+	float: left;
+	width: 40%;
+}
 /* main h1{ */
 /*
  # = id 
@@ -57,14 +88,23 @@ li{
     background-color: blue;
     list-style-type: none;
     display: block;
-    padding: 10px;
+   /* padding: 10px; */
 }
 
 li a {
     display: block;
     color: rgb(233, 221, 221);
-    padding: 10px;
-    line-height: 20px;
+	padding: 10px;
+	text-decoration: none;
+	text-transform: bold;
+	text-align: center;
+}
+
+nav li a:hover{
+	display: block;
+	background-color: var(--cor-de-fundo);
+	text-transform: bold;
+	transition: .6s;
 }
 
 footer{
@@ -76,7 +116,11 @@ footer{
 }
 
 aside {
-    float: right;
-    width: 15%;
-    background-color: var(--cor-secundaria)
+	width: 18%;
+	margin: auto;
+	position: relative;
+	top: 20px;
+	right: 20px;
+	clear: right;
+    /*background-color: var(--cor-secundaria)*/
 }
