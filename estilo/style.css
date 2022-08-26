@@ -6,11 +6,10 @@
 
 :root{
     --cor-de-fundo: rgb(231, 134, 7);
-	--cor-secundaria: rgb(255, 255, 255);
-	--COR-azul: rgb(0,0,255); 
-	--cor-preto: rgb (0,0,0);
-	--cor-laranja-claro: rgb(255,235,205);
-
+    --cor-secundaria: rgb(255, 255, 255);
+    --cor-azul: rgb(0,0,255);
+    --cor-preto: rgb(0, 0, 0);
+    --cor-laranja-claro: rgb(255, 235, 205);
 }
 
 body{
@@ -22,40 +21,102 @@ body{
 
 main{
     background-color: var(--cor-secundaria);
+    text-align: justify;
     /* margin: 20px; */
     padding: 20px;
     position: relative;
-}
+ }
 
 blockquote{
-	padding: 10px;
-	float: left;
-	width: 30%;
-	background-color: rgb(206, 202, 202);
-	/*border-bottom-width: 10px;
-	border-style: solid; 
-	border-color: black;*/
-	display: block;
-	border: 10px solid #7a7a7a; 
+    padding: 10px;
+    float: left;
+    width: 30%;
+    background-color: rgb(206, 202, 202);
+    /* border-width: 10px;
+    border-style: solid;
+    border-color: black; */
+    border: 10px solid #7a7a7a;
+    display: block;
+    margin: 0 5%;
 }
 
 cite{
-	display: block;
-	margin: 15px 20px 3px 0; /* CIMA DIREITA BAIXO ESQUERDA */
-	/* margin: 15px; Todos os lados iguais */
-	/* margin: 15px 20px; Primeiro valor serve para o TOPO e BOTTOM o segundo valor é para ESQUERDA e DIREITA*/
-	line-height: 20px;
-	text-align: right;
+    display: block;
+    /* margin: 15px;  Todos os lados iguais*/
+    /* margin: 15px 20px; Primeiro valor serve para o TOPO e BOTTOM o segundo valor é para  ESQUERDA e DIREITA*/
+    margin: 15px 5px 3px 0;
+    line-height: 20px;
+    text-align: right;
 }
 
 .limpaFloat{
-	clear: both;
+    clear: both;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+figure{
+    width: 19.4%;
+    position: absolute;
+    top: 20px;
+    right: 30px;    
+}
+
+aside, figure{
+    float: right;
+    background-color: #7a7a7a;
+    color: var(--cor-secundaria);
+    border: 5px solid var(--cor-preto);
+}
+
+aside {
+    width: 18%;
+    margin: auto;
+    position: relative;
+    top:20px;
+    right: 20px;
+    clear: right;
+    /* background-color: var(--cor-secundaria); */
+}
+
+li{
+    background-color: blue;
+    list-style-type: none;
+    display: block;
+    /* padding: 10px; */
+}
+
+li a {
+    display: block;
+    color: rgb(233, 221, 221);
+    padding: 10px;
+    text-decoration: none;
+    text-transform: bold;
+    text-align: center;
+}
+
+nav li a:hover{
+    display: block;
+    background-color: var(--cor-de-fundo);
+    text-transform: bold;
+    transition: .6s;
+}
+
+footer{
+    height: 50px;
+    line-height: 50px;
+    background-color: black;
+    color: blanchedalmond;
+    clear: both;/*left right both*/
 }
 
 .divisaoColuna{
-	float: left;
-	width: 40%;
+    float: left;
+    width: 40%;
 }
+
 /* main h1{ */
 /*
  # = id 
@@ -77,50 +138,7 @@ cite{
 }
 
 #nomeCliente{
-    font-size: 20px;
-}
-
-h2 {
-    font-size: 40px;
-}
-
-li{
-    background-color: blue;
-    list-style-type: none;
     display: block;
-   /* padding: 10px; */
-}
-
-li a {
-    display: block;
-    color: rgb(233, 221, 221);
-	padding: 10px;
-	text-decoration: none;
-	text-transform: bold;
-	text-align: center;
-}
-
-nav li a:hover{
-	display: block;
-	background-color: var(--cor-de-fundo);
-	text-transform: bold;
-	transition: .6s;
-}
-
-footer{
-    height: 50px;
-    line-height: 50px;
-    background-color: black;
-    color: blanchedalmond;
-    clear: both;/*left right both*/
-}
-
-aside {
-	width: 18%;
-	margin: auto;
-	position: relative;
-	top: 20px;
-	right: 20px;
-	clear: right;
-    /*background-color: var(--cor-secundaria)*/
+    font-size: 18px;
+    text-align: center;
 }
