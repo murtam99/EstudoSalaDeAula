@@ -75,7 +75,7 @@ aside {
     width: 18%;
     margin: auto;
     position: relative;
-    top:20px;
+    top:-34px;
     right: 20px;
     clear: right;
     /* background-color: var(--cor-secundaria); */
@@ -116,7 +116,9 @@ footer{
     float: left;
     width: 40%;
 }
-
+.reducaoDoTexto{
+    width: 75%;
+}
 /* main h1{ */
 /*
  # = id 
