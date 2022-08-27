@@ -88,7 +88,7 @@ li{
     /* padding: 10px; */
 }
 
-li a {
+nav ul li a {
     display: block;
     color: rgb(233, 221, 221);
     padding: 10px;
@@ -118,6 +118,24 @@ footer{
 }
 .reducaoDoTexto{
     width: 75%;
+}
+
+ul{
+    background-color: var(--cor-azul);
+}
+.icones-sociais li{
+    background-color: var(--cor-azul);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin-left: 10px;
+
+}
+.icones-sociais a{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
 }
 /* main h1{ */
 /*
