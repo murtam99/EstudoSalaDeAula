@@ -19,6 +19,24 @@ body{
     background-color: var(--cor-de-fundo);
 }
 
+header{
+    height: 150px;
+    width: 1024px;
+    margin: auto;
+    position: relative;
+    background-color: var(--cor-de-fundo);
+
+}
+
+header nav{
+    width: 1024px;
+    position: absolute;
+    bottom: 0;
+}
+
+header nav ul li{
+    display: inline-block;
+}
 main{
     background-color: var(--cor-secundaria);
     text-align: justify;
@@ -57,6 +75,10 @@ h2 {
     font-size: 40px;
 }
 
+p{
+    text-indent: 50px;
+}
+
 figure{
     width: 19.4%;
     position: absolute;
@@ -86,6 +108,10 @@ li{
     list-style-type: none;
     display: block;
     /* padding: 10px; */
+}
+
+ul, ol {
+    list-style: none;
 }
 
 nav ul li a {
@@ -120,9 +146,11 @@ footer{
     width: 75%;
 }
 
-ul{
-    background-color: var(--cor-azul);
+aside, nav, ul{
+    background-color: var(--cor-azul); 
+    /*todos os atributos de lista*/
 }
+
 .icones-sociais li{
     background-color: var(--cor-azul);
     display: inline-block;
@@ -133,9 +161,26 @@ ul{
 
 }
 .icones-sociais a{
+    /*background-image: url(../img/github.png);*/
     width: 40px;
     height: 40px;
     display: inline-block;
+    color: white;
+    text-indent: -9999px; 
+    /*font-size: 0; !important;*/
+    /* color: rgba(0,0,0,0); */
+}
+
+.github{
+    background-image: url(../img/github.png);
+}
+
+.linkedin{
+    background-image: url(../img/linkedin.png);
+}
+
+.twitter{
+    background-image: url(../img/twitter.png);
 }
 /* main h1{ */
 /*
