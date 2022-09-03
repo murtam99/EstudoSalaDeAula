@@ -28,6 +28,38 @@ header{
 
 }
 
+header img{
+    width: 80px;
+
+}
+
+#logo{
+    position: absolute;
+    left: 0;
+    top: 10px;
+    height: 90px;
+}
+
+input[type=text]{
+    width: 500px;
+    height: 40px;
+    font-size: 25px;
+    line-height: 38px;
+    position: absolute;
+    left: 250px;
+    top: 10px;
+    text-indent: 5px;
+}
+
+#textoEnviamos{
+    position: absolute;
+    left: 250px;
+    top: 70px;
+    font-size: 25px;
+    text-align: center;
+    color: var(--cor-secundaria);
+}
+
 header nav{
     width: 1024px;
     position: absolute;
@@ -196,6 +228,9 @@ aside, nav, ul{
     color: rgb(0, 0, 255);
     /* color: rgb(0, 0, 255, 0.5); */
     /* color: #0000FF; hexadecimal */
+}
+img{
+    width: 100%;
 }
 
 .vermelho{
